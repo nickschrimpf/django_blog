@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_stylesheet %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+    <link rel="stylesheet" href="{% static "blog/includes/header.css" %}">
+{% endblock %}
+
+{% block page_title %}
+    Nick's Blog
+{% endblock page_title %}
+
+{% block content %}
+{% include "blog/includes/header.html" %}
+    <h1>Welcome</h1>
+    <ul>
+        <li>Latest blog post</li>
+        <li>recent blog post</li>
+        <li>mike test 1 2 what is this</li>
+    </ul>
+{% endblock %}
+
