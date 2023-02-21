@@ -14,6 +14,9 @@
 {% include "blog/includes/header.html" %}
 <section>
     <h2>{{post.title}}<h2>
+        {% for tag in tags %}
+            <span>#{{tag.name}}</span>
+        {% endfor %}
         <article>
             <img src="{% static "blog/images/"|add:post.image %}" alt="{{post.title}}">
             <address>by:{{post.author}}</address>
